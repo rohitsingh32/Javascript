@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function timedMsg() {
+            var t = setTimeout("alert('5 seconds!')", 1000);
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" value="Display timed alertbox!" onClick="timedMsg()" />
+    </form>
+</body>
+
+</html>
+
+ <!-- infinite loop -->
+<html> 
+
+<head>
+    <script type="text/javascript">
+        var c = 0;
+        var t;
+        var timer_is_on = 0;
+        function timedCount() {
+            document.getElementById('txt').value = c;
+            
+            c = c + 1;
+            t = setTimeout("timedCount()", 100);
+        }
+        function doTimer() {
+            if (!timer_is_on) {
+                timer_is_on = 1;
+                timedCount();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" value="Start count!" onClick="doTimer()">
+        <input type="text" id="txt" />
+    </form>
+</body>
+
+</html>

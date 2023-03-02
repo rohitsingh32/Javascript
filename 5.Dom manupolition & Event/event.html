@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <style>
+        .btn {
+            padding: 10px 14px;
+            background-color: red;
+            border: 2px solid black;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem veritatis autem sint fugiat nobis! Animi
+            consectetur doloremque harum obcaecati quaerat at optio illo unde officiis. Quia, repudiandae impedit quos
+            beatae laboriosam hic dicta, aperiam soluta vero minus id. Odio officiis nemo quae dolorem, neque rem vitae.
+            Perferendis temporibus aut, tempora eos esse, aperiam dolorem consequuntur corporis quidem quos quis
+            inventore cumque, odit magnam sint voluptatum facere! Hic vel perspiciatis cum ab facilis minima voluptatum
+            nisi. Pariatur expedita ad praesentium ipsa debitis blanditiis doloremque inventore harum enim architecto
+            molores minima delectus possimus quod quis sint in, labore aliquam minus qui magnam
+            modi sequi odit omnis veritatis enim voluptatem. Praesentium maxime repudiandae quis dolore voluptas
+            voluptatem alias quos?</p>
+    </div>
+    <button class="btn" onclick="togglehide()">Show/Hide</button>
+     <marquee>This text will scroll from right to left</marquee> 
+    <script>
+        /* browser event:
+        click
+        contextmenu           >>>right click
+        mouseover/mouseout
+        mouesdown/mouseup
+        mousemove
+
+        submit
+        focus
+
+        DomcontentLoader
+        transitionend        >>>>>>>>for css transtion
+          */
+          //let btn = document.getElementsByClassName('btn');
+        para.addEventListener('mouseover',function run(){
+            alert('mouse inside')
+        });
+
+        
+
+
+     function togglehide(){
+        let btn = document.getElementsByClassName('btn');
+        let para = document.getElementById('para');
+        if(para.style.display != 'none'){
+            para.style.display = 'none';
+       }
+       else{
+        para.style.display = 'block';
+       }
+     }
+    </script>
+</body>
+
+</html>

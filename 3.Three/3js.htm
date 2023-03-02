@@ -1,0 +1,54 @@
+<!--There are mainly four types of loops in JavaScript.
+  1.for loop    2.for in/for of Loop / for each
+  3.while loop   4.do while Loop -->
+<!--(1.FOR loop)-->
+<html>
+
+<body>
+  <script>
+    var i = 0; //true;= i<=6;  if you are write your pc is hang
+    for (i = 0; i <= 6; i++)                      //for(let i=0; i<5; i++){
+    {                                             //console.log(+i)
+      document.write("The number is " + i + "<br>");     // }
+    }
+   // for loop in array
+    let friends = ["Rohan", "Sanjeev", "Deepti", "Pooja", "Skill"];
+    for (let index = 0; index < friends.length; index++) {
+      document.write("Hello friend," + friends[index] + "<br/>");
+    }
+  </script>
+
+</body>
+
+</html>
+
+<html>
+
+<body>
+
+  <head>
+    <title>(For Each/for of/for in loops)</title>
+  </head>
+  <script>
+    //(2.)
+    //forEach loop
+    let friends2 = ["Rohan", "Sanjeev", "Deepti", "Pooja", "Skill"];
+   friends2.forEach(function f(element) {
+    document.write("Hello friend," + element + " to javascript" + "<br/>");
+   });
+
+  //for of loop
+   let friends3 = ["Rohan", "Sanjeev", "Deepti", "Pooja", "Skill"];
+   for (element of friends3){
+     document.write("Hello friend," + element + " to morden javascript" + "<br/>");
+  };
+
+  //for in loop
+  const object = { a: 1, b: 2, c: 3 };
+  for ( property in object) {
+  document.write(`${property}: ${object[property]}`+"<br/>");
+  }
+  </script>
+</body>
+
+</html>

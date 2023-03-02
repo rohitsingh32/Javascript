@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Popup Boxes</title>
+ <!--JavaScript have three kind of popup boxes: Alert box, Confirm box, and Prompt box.-->
+<script>
+function show_alert()
+{ 
+alert("I am an alert box!"); 
+} 
+
+</script>
+</head>
+<body>
+    <input type="button" onclick="show_alert()" value="Show alert box" /> 
+</body>
+</html>
+
+
+<!--Confirm box -->
+<html> 
+<head> 
+<script> 
+function show_confirm() 
+{ 
+var r=confirm("Press a button"); 
+if (r==true) 
+ { 
+ alert("You pressed OK!"); 
+ } 
+else 
+ { 
+ alert("You pressed Cancel!"); 
+ } 
+} 
+</script> 
+</head> 
+<body> 
+<input type="button" onclick="show_confirm()" value="Show confirm 
+box" /> 
+</body> 
+</html>
+
+<!--prompt box is in 5Js.htm-->

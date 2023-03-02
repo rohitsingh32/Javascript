@@ -1,0 +1,28 @@
+<html 
+<body>
+<script>
+    // Use break to prevent the code from running into the next case automatically
+
+    //You will receive a different greeting based 
+    //on what day it is. Note that Sunday=0, 
+    //Monday=1, Tuesday=2, etc. 
+    var d = new Date();
+    theDay = d.getDay();
+    switch (theDay)
+     {
+        case 5:
+            document.write("Finally Friday");
+            break;
+        case 6:
+            document.write("Super Saturday");
+            break;
+        case 0:
+            document.write("Sunday");
+            break;
+        default:
+            document.write(" (default)I'm looking forward to this weekend!");
+    } 
+</script>
+</body>
+
+</html>

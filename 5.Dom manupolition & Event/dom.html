@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .para {
+      background-color: aqua;
+      border: 9px groove rgb(202, 43, 43);
+
+      padding: 12px;
+      margin: 5px 0;
+    }
+
+    .container {
+      background-color: rgb(21, 87, 186);
+
+      border: 9px groove black;
+      padding: 12px;
+
+    }
+
+    .bg-primary {
+      background-color: rgb(25, 168, 25);
+    }
+
+    .text-success {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome To Dom Manipulation web page in javascript</h1>
+  <div id="firstcontainer" class="container">
+    <button id="click">Click Me</button>
+    <p>This is paragraph this is best para in a universe</p>
+  </div>
+  <p class=para>This is a Paragraph</p>
+  <!--dom munipulation-->
+  <script>
+    let elem = document.getElementById("click");
+    console.log(elem);
+
+    let elemclass = document.getElementsByClassName("container");
+    console.log(elemclass);
+    // elemClass[0].style.background="yelow"; 
+    elemclass[0].classList.add("bg-primary")
+    elemclass[0].classList.add("text-success")
+    console.log(elem.innerHTML);
+    console.log(elem.innertext);
+
+    console.log(elemclass[0].innerHTML);
+    console.log(elemclass[0].innertext);
+
+    tn = document.getElementsByTagName("div")
+    console.log(tn)
+    tn = document.getElementsByTagName("button")
+    console.log(tn)
+    createdElement = document.createdElement('p');
+    createdElement.innerHTML = "This is created para";
+    tn[0].appendChild(createdElement);
+
+  </script>
+</body>
+
+</html>
